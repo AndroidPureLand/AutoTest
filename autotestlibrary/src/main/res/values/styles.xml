@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ActivityTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <!--YWLoadingDialog样式-->
+    <style name="YWLoadingDialogTheme" parent="android:Theme.Dialog">
+        <!--帧式-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗口背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否窗口悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--覆盖窗口-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--背景暗淡-->
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <!--布局commom_loading_layout中ProgressBar的样式-->
+    <style name="myProgressBarStyleLarge">
+        <item name="android:indeterminateDrawable">@anim/rotate_loading_icon</item>
+        <item name="android:indeterminateDuration">1500</item>
+        <item name="android:minWidth">50dip</item>
+        <item name="android:maxWidth">50dip</item>
+        <item name="android:minHeight">50dip</item>
+        <item name="android:maxHeight">50dip</item>
+    </style>
+
+    <!--圆角dialog样式-->
+    <style name="RcDialog" parent="@android:style/Theme.Dialog">
+        <!--帧式-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否窗口悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--是否无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗口背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--dialog背景-->
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
