@@ -3,7 +3,6 @@ package com.androidpureland.autotest.HttpData;
 
 import com.androidpureland.autotest.HttpData.Bean.NetworkResponseEntity;
 import com.androidpureland.autotest.HttpData.Dao.OnInterceptCallBack;
-import com.androidpureland.autotest.Util.sysUtil;
 
 import java.io.IOException;
 

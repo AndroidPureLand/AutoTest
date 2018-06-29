@@ -1,8 +1,5 @@
 package com.androidpureland.autotest.HttpData;
 
-import com.androidpureland.autotest.Util.sysUtil;
-
-import okhttp3.Interceptor;
 import okhttp3.Request;
 
 public class TacitlyOkHttpInterceptor extends OkHttpInterceptor {
