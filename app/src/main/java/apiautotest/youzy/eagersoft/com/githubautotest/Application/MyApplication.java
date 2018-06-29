@@ -9,6 +9,7 @@ import com.androidpureland.autotest.HttpData.Dao.onDataHandlingCallBack;
 import com.androidpureland.autotest.HttpData.HttpData;
 
 import apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.HttpMessage;
+import apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.MyOkHttpInterceptor;
 
 public class MyApplication extends Application {
     @Override
@@ -16,11 +17,11 @@ public class MyApplication extends Application {
         super.onCreate();
 
         HttpData.getInstance().builder(new HttpData.Bulder()
-                .setBaseUrlEntity(new BaseUrlEntity("http://api.help.bj.cn","测试地址1"))
-                .setBaseUrlEntity(new BaseUrlEntity("http://api.help.bj.cn","测试地址2"))
-                .setApiService("apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.ApiService")
-                .setRequest("apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.HttpRequestMethodConfig")
-                .onDataHandlingCallBack(new onDataHandlingCallBack() {
+                .setBaseUrlEntity(new BaseUrlEntity("http://api.help.bj.cn","测试地址1"))//添加测试地址
+                .setBaseUrlEntity(new BaseUrlEntity("http://api.help.bj.cn","测试地址2"))//添加测试地址 可添加多个
+                .setApiService("apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.ApiService")//反射ApiService
+                .setRequest("apiautotest.youzy.eagersoft.com.githubautotest.CustomRequestHttpAPI.HttpRequestMethodConfig")//反射ApiServiceHttpRequestMethodConfig
+                .onDataHandlingCallBack(new onDataHandlingCallBack() {//设置请求数据返回设置
                     @Override
                     public APIConfig onNext(APIConfig apiConfig, Object message) {
                         HttpMessage httpMessage = (HttpMessage) message;
@@ -49,7 +50,9 @@ public class MyApplication extends Application {
                         apiConfig.setHttpMessage(e.getMessage().toString());
                         return apiConfig;
                     }
-                }).build()
+                })
+                .setOkHttpInterceptor(new MyOkHttpInterceptor())//请求头
+                .build()//构建
         );
 
     }
