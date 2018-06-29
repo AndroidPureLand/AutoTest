@@ -1,4 +1,4 @@
-### ApiAutoTest-Android
+# ApiAutoTest-Android
 ---
 ###### 初衷
 > 每次做一个小的功能迭代在上线前，为保证线上产品的稳定性，严谨的小伙伴们总会跑一边所有的功能，其实自己很清楚业务方面只要自己没动是不会出什么问题的，怕的就是api!俗话说的好，不会偷懒的程序员不是好的程序员，我和小伙伴带来的这个框架就是为了节约大家上线前API测试的时间
@@ -11,10 +11,10 @@
 ##### 老套路 No picture you say a jb? 懒得录制gif 懂的人自然懂
 
 <div align:left;display:inline;>
-<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/1.png"/>
-<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/2.png"/>
-<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/3.png"/>
-<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/4.png"/>
+<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/1.jpg"/>
+<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/2.jpg"/>
+<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/3.jpg"/>
+<img width="200" height="400" src="https://github.com/AndroidPureLand/AutoTest/blob/master/image/4.jpg"/>
 </div>
 
 ---
